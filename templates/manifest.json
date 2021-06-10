@@ -1,0 +1,884 @@
+{
+  "version": "11.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "TypescriptCdkStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "TypescriptCdkStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/TypescriptCdkStack/DocumentBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DocumentBucketAE41E5A9",
+            "trace": [
+              "new Bucket (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:1331:22)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:11:20)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/DocumentBucketNameExport": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DocumentBucketNameExport",
+            "trace": [
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:15:5)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPC93DB1567",
+            "trace": [
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1215:21)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet1Subnet660D22C8",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1549:20)",
+              "new PublicSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1764:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet1RouteTableADE0E594",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1567:19)",
+              "new PublicSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1764:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet1RouteTableAssociation4D96D001",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1573:5)",
+              "new PublicSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1764:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet1DefaultRouteBF81A149",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1589:19)",
+              "Vpc.publicSubnets.forEach.publicSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1263:22)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1262:46)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet1EIPA96CC89C",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1776:21)",
+              "NatGatewayProvider.configureNat (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:228:27)",
+              "Vpc.createNatGateways (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1347:14)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1269:14)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet1NATGatewayD224EF80",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1774:17)",
+              "NatGatewayProvider.configureNat (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:228:27)",
+              "Vpc.createNatGateways (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1347:14)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1269:14)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet2SubnetDB4E73CE",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1549:20)",
+              "new PublicSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1764:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet2RouteTable23D10B5F",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1567:19)",
+              "new PublicSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1764:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet2RouteTableAssociation4DBBE32A",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1573:5)",
+              "new PublicSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1764:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet2DefaultRoute6B1D8435",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1589:19)",
+              "Vpc.publicSubnets.forEach.publicSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1263:22)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1262:46)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet2EIP5C2BE200",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1776:21)",
+              "NatGatewayProvider.configureNat (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:228:27)",
+              "Vpc.createNatGateways (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1347:14)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1269:14)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPublicSubnet2NATGateway39AF7173",
+            "trace": [
+              "PublicSubnet.addNatGateway (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1774:17)",
+              "NatGatewayProvider.configureNat (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:228:27)",
+              "Vpc.createNatGateways (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1347:14)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1269:14)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPrivateSubnet1Subnet1F579DA7",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1549:20)",
+              "new PrivateSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1802:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPrivateSubnet1RouteTableB0081448",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1567:19)",
+              "new PrivateSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1802:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPrivateSubnet1RouteTableAssociationFF8FC898",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1573:5)",
+              "new PrivateSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1802:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPrivateSubnet1DefaultRouteE004414E",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1635:19)",
+              "NatGatewayProvider.configureSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:245:12)",
+              "NatGatewayProvider.configureNat (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:238:12)",
+              "Vpc.createNatGateways (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1347:14)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1269:14)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPrivateSubnet2SubnetC41764F1",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1549:20)",
+              "new PrivateSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1802:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPrivateSubnet2RouteTable245388A8",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1567:19)",
+              "new PrivateSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1802:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPrivateSubnet2RouteTableAssociation9244A245",
+            "trace": [
+              "new Subnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1573:5)",
+              "new PrivateSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1802:5)",
+              "availabilityZones.forEach (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1377:28)",
+              "Vpc.createSubnets (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1366:12)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1244:10)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCPrivateSubnet2DefaultRouteB1917E94",
+            "trace": [
+              "PrivateSubnet.addRoute (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1635:19)",
+              "NatGatewayProvider.configureSubnet (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:245:12)",
+              "NatGatewayProvider.configureNat (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\nat.ts:238:12)",
+              "Vpc.createNatGateways (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1347:14)",
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1269:14)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCIGW91624FC1",
+            "trace": [
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1251:19)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/NetworkingConstruct/AppVPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NetworkingConstructAppVPCVPCGWE6FD25E8",
+            "trace": [
+              "new Vpc (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1257:19)",
+              "new Networking (C:\\experiments\\typescript-cdk\\lib\\networking.ts:14:16)",
+              "new TypescriptCdkStack (C:\\experiments\\typescript-cdk\\lib\\typescript-cdk-stack.ts:20:29)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\bin\\typescript-cdk.ts:8:15)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Module.m._compile (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "main (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (C:\\experiments\\typescript-cdk\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:688:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)",
+              "Module.load (internal/modules/cjs/loader.js:598:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:537:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:529:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:741:12)",
+              "findNodeScript.then.existing (C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "construct (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5)",
+              "visit (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:202:5)",
+              "visit (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:198:5)",
+              "injectMetadataResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:180:23)",
+              "process.App.process.once (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:273:13)",
+              "process.emit (events.js:182:13)",
+              "process.EventEmitter.emit (domain.js:442:20)",
+              "process.emit (C:\\experiments\\typescript-cdk\\node_modules\\source-map-support\\source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:121:23)"
+            ]
+          }
+        ],
+        "/TypescriptCdkStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:31:27)",
+              "construct (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:140:5)",
+              "visit (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:202:5)",
+              "visit (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:198:5)",
+              "injectMetadataResources (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:131:3)",
+              "Object.synthesize (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:180:23)",
+              "process.App.process.once (C:\\experiments\\typescript-cdk\\node_modules\\@aws-cdk\\core\\lib\\app.ts:123:45)",
+              "Object.onceWrapper (events.js:273:13)",
+              "process.emit (events.js:182:13)",
+              "process.EventEmitter.emit (domain.js:442:20)",
+              "process.emit (C:\\experiments\\typescript-cdk\\node_modules\\source-map-support\\source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:121:23)"
+            ]
+          }
+        ]
+      },
+      "displayName": "TypescriptCdkStack"
+    }
+  }
+}
